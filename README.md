@@ -16,7 +16,10 @@ Requirements:
 What this project does:
 1.	Let human play chess against UCI-based chess engines
 2.	Let chess engines pit against each other
+
+
 Chess Engines tested successfully:
+
 Arasan 22.0, Baisliscka, Crystal 080420 64, Defenchess 2.3, Demolito, Leela Chess Zero (Lc0), Ethereal 12.25, Fire 7.1 , 
 Igel, Laser 1.8 beta, Robocide, RubiChess 1.8-dev, Stockfish 230620, SugaR, Teki, Winter 0.8.4, Xiphos
 
