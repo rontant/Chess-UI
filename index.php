@@ -11,7 +11,7 @@
 <title>Chess</title>
 </head>
 <body bgcolor="#a6a6a6">
-<script src="../chessboard/loaddoc.js"></script>
+<script src="loaddoc.js"></script>
 <!--script src="../chessboard/mychess.js"></script-->
 <script src="../chessboard/FileSaver.js"></script>
 <script src="../chessboard/js/chessboard-1.0.0.js"></script>
