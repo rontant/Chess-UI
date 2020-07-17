@@ -33,7 +33,7 @@ if(strpos($engine,"Leela")!== false) {
 	$para=$para . '&cmd='. urlencode($cmd). '&movetime='. urlencode($movetime);
 	$url="http://192.168.2.66/chess/engine.php?".$para;
 	echo ( file_get_contents($url));
-	usleep(11000000);
+	usleep(7200000);
 	exit;
 }
 

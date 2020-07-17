@@ -1,9 +1,4 @@
-<?php 
-
-?>
-
-<div style="overflow-x:auto;">
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <!----------------- Top bar division ----------------------------------------->
 <div class="w3-container w3-black">
 
@@ -21,6 +16,8 @@
       <a href="#" class="w3-bar-item w3-button" onClick="Option_Cancel()">Cancel move</a>
       <a href="#" class="w3-bar-item w3-button" onClick="Option_Reset()">Reset Board</a>
 	  <a href="#" class="w3-bar-item w3-button" onClick="SavePgn()">Save to PGN</a>
+	  <a href="#" class="w3-bar-item w3-button" onClick="document.getElementById('id01').style.display='block'">View PGN</a>
+	  <a href="#" class="w3-bar-item w3-button" onClick="document.getElementById('id02').style.display='block'">Engine Log</a>
     </div>
 	</div>
 </div>
@@ -28,8 +25,8 @@
 
 <p>
 <!------------------------- CHESS BOARD division ---------------------->
-<div class="w3-row ">
-<div text-align:center; class="w3-container w3-half">
+
+
 	<header class="w3-container w3-black" style="height:23px">	
 		<?php 		
 		$element_id='topside_engine';
@@ -59,31 +56,50 @@
 				<div class="w3-red" style="height:2px;width:0%"></div>
 	</footer>
 	<!--input type="hidden" id="user_color" value="white"-->
-</div>
+
 <!------------------------- End of Chess board division ---------------------->
-<div class="w3-container w3-half">
-<header class="w3-container w3-black">PGN</header>
-<textarea rows=5 id="pgn" style="width:100%" class="w3-tiny" disabled></textarea>
+
+
+
+
+<div class="w3-container">
 
 <span class="w3-container">FEN:
-<input onclick="document.getElementById('btnApplyFEN').style.display = 'block';" class="w3-white w3-border w3-tiny w3-rest" id="fen" style="width:75%" >
+<input onclick="document.getElementById('btnApplyFEN').style.display = 'block';" class="w3-white w3-border w3-tiny w3-rest" id="fen" style="width:60%" >
 <button onclick="ApplyFEN()" id="btnApplyFEN" class="w3-tiny w3-button w3-border w3-white w3-right" style="width:15%">Apply
 </button>
 </span>
 <p>
 <button id='btnStartEngine' onclick="StartEngine()" disabled >Start Engine</button>
 Auto-play <input id='chkAutoPlay' type="checkbox" >
-
-<div id='status' >
-  <input type="hidden" id="bestmove" style="width:100%">
-</div>
-
-
 </div>
 
 
 
+<!--- Modals ---->
 
-<!------------------------- End of Right Pane division ---------------------->
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+		<header class="w3-container w3-teal"><h3>PGN</h3>
+			<span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">X</span>
+		</header>
+		<textarea rows=5 id="pgn" style="width:100%" class="w3-tiny" disabled></textarea>
+	</div>
+</div>
+
+<!--- Modals ---->
+<div id="id02" class="w3-modal">
+    <div class="w3-modal-content">
+		<header class="w3-container w3-teal"><h3>Engine Log</h3>
+			<span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">X</span>
+		</header>
+		<div id='status' >
+		<input type="hidden" id="bestmove" style="width:100%">
+		</div>
+	</div>
+</div>
+
+
+
 
 
