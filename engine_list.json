@@ -1,0 +1,24 @@
+[
+	["Arasan 22","arasanx-64"],
+	["Baislicka","baislicka"],
+	["Crystal 080420 64 BMI2","/Leela/OtherChessEngines/Crystal2020-04-08/crystal_bmi2.exe"],
+	["Defenchess 2.3","Defenchess"],
+	["Demolito","demolito"],
+	["Ethereal 12.25","ethereal"],
+	["Fire 7.1 x64","/Leela/OtherChessEngines/fire/Fire_7.1_x64_popcnt.exe"],
+	["Igel","igel"],
+	["Komodo 11","/Leela/OtherChessEngines/komodo-11/komodo-11.01-64bit.exe"],
+	["Lc0 703341","lc0 -w /usr/local/bin/703341.gz --backend=demux --backend-opts=backend=blas,a,b,c,d  --draw-score-opponent=-50"],
+	["Lc0 591226","lc0 -w /usr/local/bin/591226.gz --backend=demux --backend-opts=backend=blas,a,b,c,d"],
+	["Lc0 CUDA","/Leela/lc0 -w /Leela/703559.gz"],
+	["Laser 1.8 beta","laser"],
+	["Minic 2.40","minic_dev_linux_x64"],
+	["Robocide","robocide"],
+	["Stockfish 230620","stockfish"],
+	["Teki","teki"],
+	["Winter 0.8.4","winter"],
+	["RubiChess 1.8-dev","RubiChess"],
+	["SugaR","sugar"],
+	["Xiphos","xiphos"]
+
+]
