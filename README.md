@@ -12,6 +12,7 @@ Requirements:
 1. PHP server
 2. UCI-enabled chess engines
 3. a modern browser (e.g. Chrome, Edge, etc)
+4. Jquery (required by Hlywa's chess library and Chessboard JS)
 
 What this project does:
 1.	Let human play chess against UCI-based chess engines
